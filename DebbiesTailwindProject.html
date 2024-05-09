@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Tailwind.css">
+    <title>Portfolio Project</title>
+</head>
+<body class="">
+
+
+    <nav class="flex justify-between items-center bg-gray-800 py-5 px-4 md:px-9 fixed top-0 w-full z-50">
+        <h1 class="logo text-teal-500"><strong>Debby project</strong></h1>
+        <div class="md:hidden">
+            <!-- This div will be displayed only on small screens -->
+            <button class="text-white hover:text-teal-500">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <ul class="hidden md:flex space-x-6">
+            <!-- These list items will be displayed on medium and large screens -->
+            <li class="text-white hover:border-b hover:border-b-teal-500"><a href="#introduction">Introduction</a></li>
+            <li class="text-white hover:border-b hover:border-b-teal-500"><a href="#contact">Contact</a></li>
+            <li class="text-white hover:border-b hover:border-b-teal-500"><a href="#home">Home</a></li>
+            <li class="text-white hover:border-b hover:border-b-teal-500"><a href="#project">Projects</a></li>
+        </ul>
+        <div class="text-black bg-teal-500 p-4 hover:bg-black hover:text-white rounded-full hidden md:block">
+            <!-- This button will be displayed only on medium and large screens -->
+            <h2>Download cv</h2>
+        </div>
+    </nav>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m- md: py-5 md:py-12 lg:py-14">
+        <div class="row-span-2 flex align-center">
+            <img src="./IMG_2044-removebg-preview.png" alt="Debbie's image" class="w-full h-auto object-cover rounded-lg">
+        </div>
+        <div class="grid grid-rows-2 gap-4 py-40 w-50"style="padding: 10">
+            <!-- Box with Debby's introduction --> 
+            <div class="bg-black rounded-full text-white p-2 w-fit-content">
+                <span class="text-center text-teal-500"><strong>👋 Debby, a digital nomad</strong></span>
+            </div>
+              <!-- Box with Debby's contact information -->
+            <div class="bg-teal-500 rounded-full text-black p-2">
+                <span class="text-center"><strong>hello@domain.com</strong></span>
+            </div>
+        </div>
+    </div>
+
+
+<div class="flex justify-between items-center mx-auto pl-10 w-3/4 md:skew-x-12 lg:skew-x-12 skew-y-8 bg-teal-200">
+    <div class="w-3/4 p-3">
+        <h2 id="introduction" class="text-2xl font-bold text-black mb-4"><u>Introduction</u></h2>
+        <p class="text-lg text-black mb-4 text-cursive">Meet Debby, an aspiring Full Stack Developer with a passion for problem-solving and exploration. Combining her love for coding with her adventurous spirit, Debby travels the world, seeking out new challenges and opportunities to create innovative solutions for her clients.</p>
+        <p class="text-lg text-b">Watch as Debby builds not only her portfolio but also herself, constantly learning and growing with each new project.</p>
+    </div>
+    <div class="w-1/4 ml-4">
+        <img src="./AE325596-D2C5-458F-82CE-C5AF843B595B__1_-removebg-preview.png" alt="debbs2">
+    </div>
+</div>
+            <!-- Third section with Debby's skills -->
+<section class="m-12 md:py-12 lg:py-16">
+        <div class="flex flex-col md:flex-row justify-center md:justify-evenly items-center mx-auto pl-10 w-full md:w-3/4 md:skew-x-12 lg:skew-x-12 skew-y-8 bg-teal-500">
+            <h2 class="text-3xl font-bold mb-6">Skills</h2>
+            <div class="flex justify-center space-x-4">
+                
+                <div class="bg-black text-teal-500 p-4 rounded shadow">
+                    <h3 class="text-lg font-semibold mb-2">HTML</h3>
+                    <p class="text-white">basic building block of the web</p>
+                </div>
+                <div class="bg-black p-4 text-teal-500 rounded shadow">
+                    <h3 class="text-lg font-semibold mb-2">CSS Bootstrap, Tailwind</h3>
+                    <p class="text-white">Enhance the look and feel of web pages</p>
+            </div>
+            <div class="bg-black p-4  text-teal-500 rounded shadow">
+                <h3 class="text-lg font-semibold mb-2">Javascript</h3>
+                <p class="text-white">Adds interactivity to web pages.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Fourth section with Debby's projects -->
+
+<div class="flex justify-center m-12 bg-teal-500 py-8 md:py-12 lg:py-16 ">
+    <div class="w-full md:w-11/12 lg:w-4/5">
+        <section class="py-12 md:py-10 lg:py-16 bg-teal-400">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center bg-white py-4 rounded">Debbies Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded shadow">
+                        <img src="./td.png" alt="Project Image" class="w-full h-48 object-cover mb-2 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Project Title</h3>
+                        <p class="text-gray-600">Travel project.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded shadow">
+                        <img src="./travel.png" alt="Project Image" class="w-full h-48 object-cover mb-2 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Project Title</h3>
+                        <p class="text-gray-600">Travel project.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded shadow">
+                        <img src="./W55.png" alt="Project Image" class="w-full h-48 object-cover mb-2 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Project Title</h3>
+                        <p class="text-gray-600">Wrist Watch project.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+</div>
+            <!-- Fifth section with a contact form -->
+<section class="py-12 m-12">
+    <div class="container mx-auto bg-teal-500">
+        <h2 class="text-3xl font-bold mb-8 text-center">Contact Me</h2>
+        <form>
+            <div id="contact" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded">
+                <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded">
+            </div>
+            <textarea placeholder="Your Message" class="w-full px-4 py-2 border rounded mt-4"></textarea>
+            <button type="submit" class="bg-black text-white px-6 py-2 rounded mt-4">Send Message</button>
+        </form>
+    </div>
+</section>
+        <!-- Footer section -->
+<footer class="bg-black py-12 m-12">
+    <div class="container mx-auto flex justify-between items-center">
+        <div>
+            
+            <a href="#" class="text-gray-300 hover:text-gray-200 mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-300 hover:text-gray-200 mx-2"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-gray-300 hover:text-gray-200 mx-2"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="logo text-teal-500">&copy; 2024 Debby-Tee. All rights reserved.</p>
+    </div>
+    
+</footer>
+    <script src="./clll.js"></script>
+</body>
+</html>
